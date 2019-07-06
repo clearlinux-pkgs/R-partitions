@@ -4,7 +4,7 @@
 #
 Name     : R-partitions
 Version  : 1.9.19
-Release  : 7
+Release  : 8
 URL      : https://cran.r-project.org/src/contrib/partitions_1.9-19.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/partitions_1.9-19.tar.gz
 Summary  : Additive Partitions of Integers
