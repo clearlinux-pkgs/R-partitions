@@ -4,7 +4,7 @@
 #
 Name     : R-partitions
 Version  : 1.9.22
-Release  : 12
+Release  : 13
 URL      : https://cran.r-project.org/src/contrib/partitions_1.9-22.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/partitions_1.9-22.tar.gz
 Summary  : Additive Partitions of Integers
@@ -34,21 +34,22 @@ lib components for the R-partitions package.
 
 %prep
 %setup -q -c -n partitions
+cd %{_builddir}/partitions
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1572380559
+export SOURCE_DATE_EPOCH=1589584242
 
 %install
-export SOURCE_DATE_EPOCH=1572380559
+export SOURCE_DATE_EPOCH=1589584242
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
