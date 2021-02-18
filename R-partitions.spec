@@ -4,13 +4,14 @@
 #
 Name     : R-partitions
 Version  : 1.10.1
-Release  : 16
+Release  : 17
 URL      : https://cran.r-project.org/src/contrib/partitions_1.10-1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/partitions_1.10-1.tar.gz
 Summary  : Additive Partitions of Integers
 Group    : Development/Tools
 License  : GPL-2.0 GPL-3.0
 Requires: R-partitions-lib = %{version}-%{release}
+Requires: R-eddington
 Requires: R-gmp
 Requires: R-mathjaxr
 Requires: R-polynom
@@ -44,10 +45,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1613660698
+export SOURCE_DATE_EPOCH=1613673980
 
 %install
-export SOURCE_DATE_EPOCH=1613660698
+export SOURCE_DATE_EPOCH=1613673980
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
