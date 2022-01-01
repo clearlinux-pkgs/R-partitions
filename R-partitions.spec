@@ -4,7 +4,7 @@
 #
 Name     : R-partitions
 Version  : 1.10.4
-Release  : 29
+Release  : 30
 URL      : https://cran.r-project.org/src/contrib/partitions_1.10-4.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/partitions_1.10-4.tar.gz
 Summary  : Additive Partitions of Integers
@@ -43,10 +43,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1635118728
+export SOURCE_DATE_EPOCH=1641070206
 
 %install
-export SOURCE_DATE_EPOCH=1635118728
+export SOURCE_DATE_EPOCH=1641070206
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
