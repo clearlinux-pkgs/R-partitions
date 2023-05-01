@@ -4,7 +4,7 @@
 #
 Name     : R-partitions
 Version  : 1.10.7
-Release  : 37
+Release  : 38
 URL      : https://cran.r-project.org/src/contrib/partitions_1.10-7.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/partitions_1.10-7.tar.gz
 Summary  : Additive Partitions of Integers
